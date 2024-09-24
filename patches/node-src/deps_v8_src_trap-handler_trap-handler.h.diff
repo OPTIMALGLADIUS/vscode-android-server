@@ -45,4 +45,3 @@ Index: vscode/node-src/deps/v8/src/trap-handler/trap-handler.h
 -#endif
  
 #if V8_OS_ANDROID && V8_TRAP_HANDLER_SUPPORTED
-// It would require some careful security review before the trap handler
