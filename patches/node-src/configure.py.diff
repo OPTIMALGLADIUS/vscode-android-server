@@ -2,12 +2,12 @@ Index: vscode/node-src/configure.py
 ===================================================================
 --- vscode.orig/node-src/configure.py
 +++ vscode/node-src/configure.py
-@@ -1242,7 +1242,7 @@ def configure_node(o):
+@@ -1418,7 +1418,7 @@ def configure_node(o):
    o['variables']['want_separate_host_toolset'] = int(cross_compiling)
  
    # Enable branch protection for arm64
 -  if target_arch == 'arm64':
 +  if target_arch == 'arm64-disablezz':
-     o['cflags']+=['-msign-return-address=all']
+     o['variables']['arm_fpu'] = options.arm_fpu or 'neon'
  
    if options.node_snapshot_main is not None:
