@@ -7,4 +7,3 @@ deps_uv_src_unix_sysinfo-memory.c.diff
 deps_v8_src_flags_flag-definitions.h.diff
 lib_child_process.js.diff
 tools_v8_gypfiles_toolchain.gypi.diff
-tools_v8_gypfiles_v8.gyp.diff
