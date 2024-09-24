@@ -17,6 +17,6 @@ Index: vscode/node-src/deps/uv/src/unix/process.c
      uv__write_errno(error_fd);
 -
 +#endif
-   if (options->env != NULL) {
+   if (options->env != NULL)
      environ = options->env;
    }
