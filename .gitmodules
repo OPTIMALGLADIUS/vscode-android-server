@@ -1,7 +1,3 @@
-[submodule "node-src"]
-	path = node-src
-	url = https://github.com/nodejs/node
-    ignore = dirty
 [submodule "code-server"]
 	path = code-server
 	url = https://github.com/coder/code-server.git
