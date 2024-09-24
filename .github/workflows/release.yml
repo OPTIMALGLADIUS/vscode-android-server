@@ -37,6 +37,7 @@ jobs:
           cp uv.gyp node-src/deps/uv/.
           cp log.cc node-src/deps/v8/src/logging/.
           cp os.js node-src/lib/.
+          cp trap-handler.h node-src/deps/v8/src/trap-handler/.
           ./dev.sh build-android-env
       - name: Create archive
         run: ./dev.sh docker-run bash -c './dev.sh apply-patch && BUILD_NODE=1 BUILD_RELEASE=1 ANDROID_ARCH=${{ matrix.arch }} ./dev.sh release'
