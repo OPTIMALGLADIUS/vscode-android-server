@@ -32,10 +32,6 @@ jobs:
             mono-runtime-common monodoc-manual ruby
           sudo apt autoremove -yq
           sudo rm -rf /opt/hostedtoolcache /usr/local /usr/share/dotnet /usr/share/swift
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
       - name: Build docker
         run: |
           cp uv.gyp node-src/deps/uv/.
