@@ -66,7 +66,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 RUN . ~/.cargo/env && rustup target add x86_64-linux-android i686-linux-android aarch64-linux-android armv7-linux-androideabi
 
-ENV NDK=/opt/android-ndk
+ENV NDK=${PWD}/android-ndk-r25
 ENV NDK_BIN_ROOT=$NDK/toolchains/llvm/prebuilt/linux-x86_64/bin
 ENV ANDROID_ARCH=aarch64
 
