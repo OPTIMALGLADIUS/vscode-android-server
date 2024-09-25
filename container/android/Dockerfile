@@ -4,7 +4,7 @@ ARG PYTHON_VERSION=3.12.6
 
 ENV PYTHON_VERSION=${PYTHON_VERSION}
 
-RUN DEBIAN_FRONTEND=noninteractive apt -y remove gcc gcc-5 g++ clang
+RUN DEBIAN_FRONTEND=noninteractive apt -y remove gcc g++ clang
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
  && DEBIAN_FRONTEND=noninteractive apt -y install \
     curl dirmngr apt-transport-https lsb-release ca-certificates
@@ -44,7 +44,7 @@ RUN update-alternatives --remove-all gcc || true; update-alternatives --remove-a
 
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test && \
     DEBIAN_FRONTEND=noninteractive apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install gcc-9 g++-9 gcc-9-multilib g++-9-multilib -y
+    DEBIAN_FRONTEND=noninteractive apt-get install gcc-13 g++-13 gcc-13-multilib g++-13-multilib -y
 
 RUN mkdir -p /tmp/python-build && cd /tmp/python-build && \
     DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y libbz2-dev && \
