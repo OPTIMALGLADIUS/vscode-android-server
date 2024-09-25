@@ -51,7 +51,7 @@ RUN mkdir -p /tmp/python-build && cd /tmp/python-build && \
     wget https://www.python.org/ftp/python/${PYTHON_VERSION}/Python-${PYTHON_VERSION}.tgz && \
     tar -xf Python-*.tgz && cd Python-* && \
     ./configure --enable-optimizations && \
-    make -j 4 && sudo make install
+    make -j 4 && make install
 
 RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 10 && \
     update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 10 && \
