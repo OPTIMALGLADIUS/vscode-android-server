@@ -72,7 +72,7 @@ main() {
           git clean -dfX
           git checkout -f HEAD
           (cd ..; rm -rf .pc; QUILT_PATCHES=patches/node-src quilt push -a -f)
-          $USERRUN PATH=/vscode-build/hostbin:$PATH CC_host=gcc CXX_host=g++ LINK_host=g++ ./android-configure /home/runner/work/vscode-android-server/vscode-android-server/android-ndk-r25/ $ANDROID_BUILD_API_VERSION $NODE_CONFIGURE_NAME
+          $USERRUN PATH=/vscode-build/hostbin:$PATH CC_host=gcc CXX_host=g++ LINK_host=g++ ./android-configure /android-ndk-r25/ $ANDROID_BUILD_API_VERSION $NODE_CONFIGURE_NAME
           NODE_MAKE_CUSTOM_LDFLAGS=
           if [[ "$ANDROID_ARCH" == "x86" ]]; then
             NODE_MAKE_CUSTOM_LDFLAGS=-latomic
@@ -145,7 +145,7 @@ main() {
         fi
         rm -rf cs-$ANDROID_ARCH.tgz libc++_shared.so node
         cp node-src/out/Release/node ./
-        cp /home/runner/work/vscode-android-server/vscode-android-server/android-ndk/sources/cxx-stl/llvm-libc++/libs/$ARCH_NAME/libc++_shared.so ./libc++_shared.so
+        cp /android-ndk/sources/cxx-stl/llvm-libc++/libs/$ARCH_NAME/libc++_shared.so ./libc++_shared.so
         VERSION_SUFFIX=
         if [[ -f patch_version ]]; then
           VERSION_SUFFIX="-p$(cat patch_version)"
