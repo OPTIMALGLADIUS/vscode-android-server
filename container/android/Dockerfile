@@ -5,7 +5,6 @@ ARG PYTHON_VERSION=3.12.6
 ENV PYTHON_VERSION=${PYTHON_VERSION}
 
 RUN DEBIAN_FRONTEND=noninteractive apt -y remove gcc g++ clang
-RUN DEBIAN_FRONTEND=noninteractive ls
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
  && DEBIAN_FRONTEND=noninteractive apt -y install \
     curl dirmngr apt-transport-https lsb-release ca-certificates
@@ -78,5 +77,6 @@ RUN git config --global --add safe.directory /vscode \
     && git config --global --add safe.directory /vscode/code-server \
     && git config --global --add safe.directory /vscode/code-server/lib/vscode \
     && git config --global --add safe.directory /vscode/node-src
+    && ls
 
 ENTRYPOINT /bin/bash
