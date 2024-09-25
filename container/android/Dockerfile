@@ -38,13 +38,13 @@ RUN ARCH="$(dpkg --print-architecture)" && \
 RUN DEBIAN_FRONTEND=noninteractive apt -y autoremove
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y make vim nano software-properties-common
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y make vim nano software-properties-common zlib1g-dev
 
 RUN update-alternatives --remove-all gcc || true; update-alternatives --remove-all g++ || true
 
 RUN add-apt-repository ppa:ubuntu-toolchain-r/test && \
     DEBIAN_FRONTEND=noninteractive apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install gcc-13 g++-13 gcc-13-multilib g++-13-multilib -y
+    DEBIAN_FRONTEND=noninteractive apt-get install gcc-13 g++-13 gcc-13-multilib g++-13-multilib clang -y
 
 RUN mkdir -p /tmp/python-build && cd /tmp/python-build && \
     DEBIAN_FRONTEND=noninteractive apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y libbz2-dev && \
