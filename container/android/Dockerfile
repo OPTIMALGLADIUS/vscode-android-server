@@ -1,4 +1,4 @@
-FROM bitriseio/android-ndk-20.04:latest
+FROM hannesa2/android-ndk:master
 
 ARG PYTHON_VERSION=3.12.6
 
