@@ -38,7 +38,7 @@ RUN ARCH="$(dpkg --print-architecture)" && \
 RUN DEBIAN_FRONTEND=noninteractive apt -y autoremove
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y make vim nano
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y make vim nano software-properties-common
 
 RUN update-alternatives --remove-all gcc || true; update-alternatives --remove-all g++ || true
 
