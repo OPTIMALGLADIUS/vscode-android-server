@@ -10,7 +10,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
     curl dirmngr apt-transport-https lsb-release ca-certificates
 
 # Installs node.
-RUN curl -sSL https://deb.nodesource.com/setup_16.x | bash - && \
+RUN curl -sSL https://deb.nodesource.com/setup_20.x | bash - && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 # Installs yarn.
@@ -53,8 +53,8 @@ RUN mkdir -p /tmp/python-build && cd /tmp/python-build && \
     ./configure --enable-optimizations && \
     make -j 4 && sudo make install
 
-RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 10 && \
-    update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-9 10 && \
+RUN update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 10 && \
+    update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-13 10 && \
     update-alternatives --install /usr/bin/cc cc /usr/bin/gcc 30 && \
     update-alternatives --set cc /usr/bin/gcc && \
     update-alternatives --install /usr/bin/c++ c++ /usr/bin/g++ 30 && \
