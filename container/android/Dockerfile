@@ -76,7 +76,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -y update \
 RUN git config --global --add safe.directory /vscode \
     && git config --global --add safe.directory /vscode/code-server \
     && git config --global --add safe.directory /vscode/code-server/lib/vscode \
-    && git config --global --add safe.directory /vscode/node-src
+    && git config --global --add safe.directory /vscode/node-src \
     && ls
 
 ENTRYPOINT /bin/bash
