@@ -78,6 +78,7 @@ RUN git config --global --add safe.directory /vscode \
     && git config --global --add safe.directory /vscode/code-server/lib/vscode \
     && git config --global --add safe.directory /vscode/node-src \
     && ls \
-    && pwd
+    && pwd \
+    && ls android-ndk-r25
 
 ENTRYPOINT /bin/bash
