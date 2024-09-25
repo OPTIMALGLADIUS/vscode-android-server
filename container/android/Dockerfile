@@ -77,6 +77,7 @@ RUN git config --global --add safe.directory /vscode \
     && git config --global --add safe.directory /vscode/code-server \
     && git config --global --add safe.directory /vscode/code-server/lib/vscode \
     && git config --global --add safe.directory /vscode/node-src \
-    && ls
+    && ls \
+    && pwd
 
 ENTRYPOINT /bin/bash
