@@ -35,6 +35,7 @@ jobs:
       - name: Build docker
         run: |
           cp os.js node-src/lib/.
+          cp node.gyp node-src/.
           ./dev.sh build-android-env
       - name: Create archive
         run: |
