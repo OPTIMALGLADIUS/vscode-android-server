@@ -1,5 +1,5 @@
---- ./test/parallel/test-fs-readfilesync-pipe-large.js.orig	2024-02-20 18:49:12.450147520 +0530
-+++ ./test/parallel/test-fs-readfilesync-pipe-large.js	2024-02-20 18:55:10.946605435 +0530
+--- vscode.orig/node-src/test/parallel/test-fs-readfilesync-pipe-large.js.orig	2024-02-20 18:49:12.450147520 +0530
++++ vscode/node-src/test/parallel/test-fs-readfilesync-pipe-large.js	2024-02-20 18:55:10.946605435 +0530
 @@ -4,13 +4,13 @@
  // Simulate `cat readfile.js | node readfile.js`
  
