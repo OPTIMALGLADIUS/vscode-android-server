@@ -1,5 +1,5 @@
---- ./test/parallel/test-dgram-bind-fd.js.orig	2022-06-05 10:30:47.907598510 +0530
-+++ ./test/parallel/test-dgram-bind-fd.js	2022-06-05 10:31:18.697598498 +0530
+--- vscode.orig/node-src/test/parallel/test-dgram-bind-fd.js.orig	2022-06-05 10:30:47.907598510 +0530
++++ vscode/node-src/test/parallel/test-dgram-bind-fd.js	2022-06-05 10:31:18.697598498 +0530
 @@ -7,6 +7,7 @@
  const assert = require('assert');
  const dgram = require('dgram');
