@@ -1,6 +1,6 @@
 diff -u -r ../node-v20.14.0/deps/npm/lib/cli/entry.js ./deps/npm/lib/cli/entry.js
---- ../node-v20.14.0/deps/npm/lib/cli/entry.js	2024-05-28 04:57:54.000000000 +0000
-+++ ./deps/npm/lib/cli/entry.js	2024-05-30 19:57:14.804332523 +0000
+--- vscode.orig/node-src/deps/npm/lib/cli/entry.js	2024-05-28 04:57:54.000000000 +0000
++++ vscode/node-src/deps/npm/lib/cli/entry.js	2024-05-30 19:57:14.804332523 +0000
 @@ -64,13 +64,6 @@
  
      const execPromise = npm.exec(command, args)
