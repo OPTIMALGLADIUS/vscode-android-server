@@ -1,4 +1,4 @@
-diff '--color=auto' -uNr vscode/node-src/deps/uv/src/unix/sysinfo-memory.c node-v18.0.0/deps/uv/src/unix/sysinfo-memory.c
+diff '--color=auto' -uNr vscode.orig/node-src/deps/uv/src/unix/sysinfo-memory.c node-v18.0.0/deps/uv/src/unix/sysinfo-memory.c
 --- vscode.orig/node-src/deps/uv/src/unix/sysinfo-memory.c	2022-04-21 15:15:32.611869790 +0530
 +++ vscode/node-src/deps/uv/src/unix/sysinfo-memory.c	2022-04-21 15:46:04.427175110 +0530
 @@ -25,6 +25,7 @@
