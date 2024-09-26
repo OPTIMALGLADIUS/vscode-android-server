@@ -1,6 +1,6 @@
 TODO(@thunder-coding): Remove this patch when NDK update fixes the issue.
---- ./deps/v8/src/handles/handles.h.orig	2024-02-18 16:58:52.371208097 +0530
-+++ ./deps/v8/src/handles/handles.h	2024-02-18 16:59:18.375124836 +0530
+--- vscode.orig/node-src/deps/v8/src/handles/handles.h.orig	2024-02-18 16:58:52.371208097 +0530
++++ vscode/node-src/deps/v8/src/handles/handles.h	2024-02-18 16:59:18.375124836 +0530
 @@ -129,7 +129,7 @@
      } else {
        // `static_assert(false)` in this else clause was an unconditional error
