@@ -1,6 +1,6 @@
-diff '--color=auto' -uNr node-v18.0.0.orig/lib/child_process.js node-v18.0.0/lib/child_process.js
---- node-v18.0.0.orig/lib/child_process.js	2022-04-21 15:15:48.551869784 +0530
-+++ node-v18.0.0/lib/child_process.js	2022-04-21 15:46:39.467175097 +0530
+diff '--color=auto' -uNr vscode.orig/node-src/lib/child_process.js node-v18.0.0/lib/child_process.js
+--- vscode.orig/node-src/lib/child_process.js	2022-04-21 15:15:48.551869784 +0530
++++ vscode/node-src/lib/child_process.js	2022-04-21 15:46:39.467175097 +0530
 @@ -578,7 +578,7 @@
        if (typeof options.shell === 'string')
          file = options.shell;
