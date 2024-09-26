@@ -153,7 +153,7 @@ diff -u -r vscode.orig/node-src/node.gyp vscode/node-src/node.gyp
  
      {
        'target_name': 'embedtest',
-@@ -1381,75 +1254,6 @@
+@@ -1374,81 +1254,6 @@
          }],
        ]
      },
@@ -191,6 +191,12 @@ diff -u -r vscode.orig/node-src/node.gyp vscode/node-src/node.gyp
 -        'tools/snapshot/node_mksnapshot.cc',
 -      ],
 -
+-      'msvs_settings': {
+-        'VCLinkerTool': {
+-          'EnableCOMDATFolding': '1', # /OPT:NOICF
+-        },
+-      },
+- 
 -      'conditions': [
 -        ['node_write_snapshot_as_array_literals=="true"', {
 -          'defines': [ 'NODE_MKSNAPSHOT_USE_ARRAY_LITERALS=1' ],
