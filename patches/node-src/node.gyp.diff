@@ -1,4 +1,4 @@
-diff -u -r vscode.orig/node-src/node.gyp ./node.gyp
+diff -u -r vscode.orig/node-src/node.gyp vscode/node-src/node.gyp
 --- vscode.orig/node-src/node.gyp	2024-09-03 03:18:45.000000000 +0000
 +++ vscode/node-src/node.gyp	2024-09-10 21:40:40.985225197 +0000
 @@ -560,7 +560,8 @@
