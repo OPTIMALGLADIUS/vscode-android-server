@@ -1,4 +1,4 @@
-diff '--color=auto' -uNr node-v18.0.0.orig/tools/v8_gypfiles/v8.gyp node-v18.0.0/tools/v8_gypfiles/v8.gyp
+diff '--color=auto' -uNr vscode.orig/node-src/tools/v8_gypfiles/v8.gyp vscode/node-src/tools/v8_gypfiles/v8.gyp
 --- vscode.orig/node-src/tools/v8_gypfiles/v8.gyp	2022-04-21 15:15:48.771869783 +0530
 +++ vscode/node-src/tools/v8_gypfiles/v8.gyp	2022-04-21 15:49:30.537175031 +0530
 @@ -1114,6 +1114,7 @@
