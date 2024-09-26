@@ -1,4 +1,4 @@
-diff -u -r vscode.orig/node-src/deps/npm/lib/cli/entry.js ./deps/npm/lib/cli/entry.js
+diff -u -r vscode.orig/node-src/deps/npm/lib/cli/entry.js vscode/node-src/deps/npm/lib/cli/entry.js
 --- vscode.orig/node-src/deps/npm/lib/cli/entry.js	2024-05-28 04:57:54.000000000 +0000
 +++ vscode/node-src/deps/npm/lib/cli/entry.js	2024-05-30 19:57:14.804332523 +0000
 @@ -64,13 +64,6 @@
