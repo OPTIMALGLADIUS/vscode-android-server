@@ -1,4 +1,4 @@
-diff '--color=auto' -uNr node-v18.0.0.orig/deps/uv/src/unix/fs.c node-v18.0.0/deps/uv/src/unix/fs.c
+diff '--color=auto' -uNr vscode.orig/node-src/deps/uv/src/unix/fs.c node-v18.0.0/deps/uv/src/unix/fs.c
 --- vscode.orig/node-src/deps/uv/src/unix/fs.c	2022-04-21 15:15:32.641869790 +0530
 +++ vscode/node-src/deps/uv/src/unix/fs.c	2022-04-21 15:28:38.058124015 +0530
 @@ -1339,6 +1339,7 @@
