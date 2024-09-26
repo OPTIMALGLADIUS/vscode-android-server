@@ -1,6 +1,6 @@
 diff '--color=auto' -uNr node-v18.0.0.orig/tools/v8_gypfiles/v8.gyp node-v18.0.0/tools/v8_gypfiles/v8.gyp
---- node-v18.0.0.orig/tools/v8_gypfiles/v8.gyp	2022-04-21 15:15:48.771869783 +0530
-+++ node-v18.0.0/tools/v8_gypfiles/v8.gyp	2022-04-21 15:49:30.537175031 +0530
+--- vscode.orig/node-src/tools/v8_gypfiles/v8.gyp	2022-04-21 15:15:48.771869783 +0530
++++ vscode/node-src/tools/v8_gypfiles/v8.gyp	2022-04-21 15:49:30.537175031 +0530
 @@ -1114,6 +1114,7 @@
              '<(V8_ROOT)/src/base/platform/platform-posix.h',
              '<(V8_ROOT)/src/base/platform/platform-posix-time.cc',
