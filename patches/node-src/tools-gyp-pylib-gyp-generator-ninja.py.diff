@@ -1,4 +1,4 @@
-diff --git a/tools/gyp/pylib/gyp/generator/ninja.py b/tools/gyp/pylib/gyp/generator/ninja.py
+diff --git vscode.orig/node-src/tools/gyp/pylib/gyp/generator/ninja.py vscode/node-src/tools/gyp/pylib/gyp/generator/ninja.py
 index 3db3771ac9..2e0a021703 100644
 --- vscode.orig/node-src/tools/gyp/pylib/gyp/generator/ninja.py
 +++ vscode/node-src/tools/gyp/pylib/gyp/generator/ninja.py
