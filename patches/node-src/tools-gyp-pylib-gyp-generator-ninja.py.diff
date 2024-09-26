@@ -1,7 +1,7 @@
 diff --git a/tools/gyp/pylib/gyp/generator/ninja.py b/tools/gyp/pylib/gyp/generator/ninja.py
 index 3db3771ac9..2e0a021703 100644
---- a/tools/gyp/pylib/gyp/generator/ninja.py
-+++ b/tools/gyp/pylib/gyp/generator/ninja.py
+--- vscode.orig/node-src/tools/gyp/pylib/gyp/generator/ninja.py
++++ vscode/node-src/tools/gyp/pylib/gyp/generator/ninja.py
 @@ -42,7 +42,7 @@ generator_default_variables = {
      # the start of a string, while $| is used for variables that can appear
      # anywhere in a string.
