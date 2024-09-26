@@ -1,5 +1,5 @@
---- ./lib/os.js.orig	2023-01-06 02:53:28.000000000 +0530
-+++ ./lib/os.js	2023-01-07 16:38:56.051166243 +0530
+--- vscode.orig/node-src/lib/os.js.orig	2023-01-06 02:53:28.000000000 +0530
++++ vscode/node-src/lib/os.js	2023-01-07 16:38:56.051166243 +0530
 @@ -193,7 +193,7 @@
      path = safeGetenv('TMPDIR') ||
             safeGetenv('TMP') ||
