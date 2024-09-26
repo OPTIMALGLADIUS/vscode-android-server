@@ -1,5 +1,5 @@
---- ./tools/v8_gypfiles/toolchain.gypi.orig	2024-02-16 19:22:17.174789664 +0530
-+++ ./tools/v8_gypfiles/toolchain.gypi	2024-02-16 19:25:03.257070768 +0530
+--- vscode.orig/node-src/tools/v8_gypfiles/toolchain.gypi.orig	2024-02-16 19:22:17.174789664 +0530
++++ vscode/node-src/tools/v8_gypfiles/toolchain.gypi	2024-02-16 19:25:03.257070768 +0530
 @@ -62,7 +62,7 @@
      'mips_use_msa%': 0,
  
