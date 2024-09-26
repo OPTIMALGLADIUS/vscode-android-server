@@ -1,5 +1,5 @@
---- ./test/parallel/test-fs-readfile-pipe.js.orig	2024-02-20 18:48:57.502931529 +0530
-+++ ./test/parallel/test-fs-readfile-pipe.js	2024-02-20 18:52:36.717637243 +0530
+--- vscode.orig/node-src/test/parallel/test-fs-readfile-pipe.js.orig	2024-02-20 18:48:57.502931529 +0530
++++ vscode/node-src/test/parallel/test-fs-readfile-pipe.js	2024-02-20 18:52:36.717637243 +0530
 @@ -25,13 +25,13 @@
  // Simulate `cat readfile.js | node readfile.js`
  
