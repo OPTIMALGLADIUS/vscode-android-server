@@ -1,5 +1,5 @@
---- ./src/node_report.cc.orig	2022-06-04 20:28:45.524998388 +0530
-+++ ./src/node_report.cc	2022-06-04 20:30:09.764998356 +0530
+--- vscode.orig/node-src/src/node_report.cc.orig	2022-06-04 20:28:45.524998388 +0530
++++ vscode/node-src/src/node_report.cc	2022-06-04 20:30:09.764998356 +0530
 @@ -425,6 +425,9 @@
      }
      writer->json_arrayend();
