@@ -1,3 +1,7 @@
 [submodule "code-server"]
 	path = code-server
 	url = https://github.com/coder/code-server.git
+[submodule "node-src"]
+	path = node-src
+	url = https://github.com/nodejs/node.git
+	branch = v20.x
