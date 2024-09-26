@@ -1,5 +1,5 @@
---- ./test/parallel/test-process-constants-noatime.js.orig	2022-06-21 15:34:16.647265960 +0530
-+++ ./test/parallel/test-process-constants-noatime.js	2022-06-21 15:34:38.957265951 +0530
+--- vscode.orig/node-src/test/parallel/test-process-constants-noatime.js.orig	2022-06-21 15:34:16.647265960 +0530
++++ vscode/node-src/test/parallel/test-process-constants-noatime.js	2022-06-21 15:34:38.957265951 +0530
 @@ -4,7 +4,7 @@
  const assert = require('assert');
  const constants = require('fs').constants;
