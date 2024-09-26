@@ -1,5 +1,5 @@
---- ./test/parallel/test-dgram-socket-buffer-size.js.orig	2022-06-05 10:48:41.037598101 +0530
-+++ ./test/parallel/test-dgram-socket-buffer-size.js	2022-06-05 10:48:52.537598096 +0530
+--- vscode.orig/node-src/test/parallel/test-dgram-socket-buffer-size.js.orig	2022-06-05 10:48:41.037598101 +0530
++++ vscode/node-src/test/parallel/test-dgram-socket-buffer-size.js	2022-06-05 10:48:52.537598096 +0530
 @@ -6,6 +6,7 @@
  const dgram = require('dgram');
  const { inspect } = require('util');
