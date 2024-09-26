@@ -1,5 +1,5 @@
---- ./deps/v8/src/flags/flag-definitions.h.orig	2024-02-16 18:11:37.252847521 +0530
-+++ ./deps/v8/src/flags/flag-definitions.h	2024-02-16 18:32:55.354489365 +0530
+--- vscode.orig/node-src/deps/v8/src/flags/flag-definitions.h.orig	2024-02-16 18:11:37.252847521 +0530
++++ vscode/node-src/deps/v8/src/flags/flag-definitions.h	2024-02-16 18:32:55.354489365 +0530
 @@ -2594,7 +2594,7 @@
  #define DEFAULT_PERF_BASIC_PROF_PATH "/data/local/tmp"
  #define DEFAULT_PERF_PROF_PATH DEFAULT_PERF_BASIC_PROF_PATH
