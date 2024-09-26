@@ -7,7 +7,6 @@ deps-uv-src-unix-core.c.diff
 deps-uv-src-unix-process.c.diff
 deps-uv-uv.gyp.diff
 deps-v8-src-flags-flag-definitions.h.diff
-deps-v8-src-handles-handles.h.diff
 deps-v8-src-trap-handler-trap-handler.h.diff
 fix_multiple_definitions.diff
 lib-child_process.js.diff
